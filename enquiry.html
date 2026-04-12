@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Fresh Fade Barber</title>
+    <title>Enquiry</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>Fresh Fade Barber Shop</h1>
+    <h1>Book Now</h1>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -19,18 +18,16 @@
     </nav>
 </header>
 
-<section class="hero">
-    <h2>Sharp Cuts. Clean Style.</h2>
-</section>
-
 <main>
-    <h2>Welcome</h2>
-    <p>Get the best haircut experience in town.</p>
+    <form onsubmit="return validateForm()">
 
-    <div class="card">
-        <h3>Why Choose Us?</h3>
-        <p>Professional barbers and modern styles.</p>
-    </div>
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <textarea placeholder="Your request"></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
 </main>
 
 <footer>
